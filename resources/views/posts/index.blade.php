@@ -4,6 +4,7 @@
 <div class="text-center">
     <h1 class="text-success">Posts</h1>
 </div>
+@include('inc.messages')
 <div>
     @if(count($posts) > 0)
         @foreach($posts as $post)

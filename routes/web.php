@@ -22,3 +22,6 @@ Route::get('/services','PagesController@services');
 
 //To get all the methods running in PostsController
 Route::resource('posts','PostsController');
+Auth::routes();
+
+Route::get('/dashboard', 'DashboardController@index');

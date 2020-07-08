@@ -4,10 +4,19 @@
     <a class="" href="/posts">
         <button class="btn btn-warning"><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp; Back</button>
     </a>
+
+    @include('inc.messages')
     <div>
         <h2 class="text-success">{{$post->title}}</h2>
-        <div>
-            <p>{{$post->body}}</p>
+        <div class="text-center">
+            <p>{!! $post->body !!}</p>
+        </div>
+        <div class="margin-top-xl">
+            <a href="/posts/{{ $post->id }}/edit" class="btn btn-info">Edit</a>
+            {!! Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST', 'class'=> 'pull-right']) !!}
+                {{ Form::hidden('_method','DELETE') }}
+                {{ Form::submit('Delete',['class' => 'btn btn-danger']) }}
+            {!! Form::close() !!}
         </div>
         <hr>
         <small>Written on
@@ -15,7 +24,5 @@
             <h5>by <strong>author</strong></h5>
         </small>
     </div>
-    <div>
-
-    </div>
+    
 @endsection
