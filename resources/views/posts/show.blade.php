@@ -14,7 +14,6 @@
             <strong class="text-danger">{{ $post->created_at }}</strong>
             <h5>by <strong>author</strong></h5>
         </small>
-        
     </div>
     <div>
 

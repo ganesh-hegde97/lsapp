@@ -5,7 +5,7 @@
     <h1 class="text-success">Posts</h1>
 </div>
 <div>
-    @if(count($posts) > 1)
+    @if(count($posts) > 0)
         @foreach($posts as $post)
             <div class="well well-sm">
                 <h3>{{ $post->title }}</h3>
@@ -19,6 +19,7 @@
                 </div>
             </div>
         @endforeach
+        {{ $posts->links() }}
     @else
         <div class="well border-danger">
             <p>No posts found</p>

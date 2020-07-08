@@ -13,7 +13,7 @@ class PostsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        $posts = Post::all();
+        $posts = Post::orderBy('title','desc')->paginate(2);
         return view('posts.index')->with('posts',$posts);
     }
 
@@ -23,7 +23,7 @@ class PostsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create() {
-        //
+        return view('posts.create');
     }
 
     /**
