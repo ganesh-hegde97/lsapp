@@ -19,9 +19,9 @@
             {!! Form::close() !!}
         </div>
         <hr>
-        <small>Written on
+        <small>Published on
             <strong class="text-danger">{{ $post->created_at }}</strong>
-            <h5>by <strong>author</strong></h5>
+            <h5>by <strong>{{ $post->user->name }}</strong></h5>
         </small>
     </div>
     

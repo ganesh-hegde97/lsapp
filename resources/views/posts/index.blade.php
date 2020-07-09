@@ -10,8 +10,9 @@
         @foreach($posts as $post)
             <div class="well well-sm">
                 <h3>{{ $post->title }}</h3>
-                <small>Written on
+                <small>Published on
                     <strong class="text-danger">{{ $post->created_at }}</strong>
+                    <h5>by <strong>{{ $post->user->name }}</strong></h5>
                 </small>
                 <div>
                     <a href="/posts/{{ $post->id }}">

@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="text-center m-4">
-        <h1>About</h1>
-        <p>This is the About Page</p>
+    <div class="container m-4">
+        <h1>About Us</h1>
+        <p></p>
+        @include('inc.footer')
     </div>
 @endsection
