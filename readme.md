@@ -1,3 +1,5 @@
+# Laravel Blog
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
@@ -7,6 +9,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+<<<<<<< HEAD
 # Laravel Blog
 A Blog website using **Laravel** framework which includes Authentication, File uploading and Bootstrap 3.3.7 styling as well.
 
@@ -15,6 +18,8 @@ The sql dump is in **_SQL/lsapp.sql** , Please import it in database once you cl
 
 ### Version
 `1.0.0`
+=======
+>>>>>>> bc1c5ee9e20904bb84a3aacf8967e1f82a870673
 
 ## Security Vulnerabilities
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
