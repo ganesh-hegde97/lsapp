@@ -21,7 +21,7 @@
         <div class="container">
             @yield('content')
         </div>
-        {{-- @include('inc.footer') --}}
+        @include('inc.footer')
     </body>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>

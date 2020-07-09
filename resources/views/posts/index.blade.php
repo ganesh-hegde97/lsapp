@@ -9,15 +9,22 @@
     @if(count($posts) > 0)
         @foreach($posts as $post)
             <div class="well well-sm">
-                <h3>{{ $post->title }}</h3>
-                <small>Published on
-                    <strong class="text-danger">{{ $post->created_at }}</strong>
-                    <h5>by <strong>{{ $post->user->name }}</strong></h5>
-                </small>
-                <div>
-                    <a href="/posts/{{ $post->id }}">
-                        <button class="btn btn-link">Read More</button>
-                    </a>
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <img src="/storage/post_images/{{ $post->cover_image }}" height="150" width="230"  class="" alt="Post Image">
+                    </div>
+                    <div class="col-md-9 col-sm-9">
+                        <h3>{{ $post->title }}</h3>
+                        <small>Published on
+                            <strong class="text-danger">{{ $post->created_at }}</strong>
+                            <h5>by <strong>{{ $post->user->name }}</strong></h5>
+                        </small>
+                        <div>
+                            <a href="/posts/{{ $post->id }}">
+                                <button class="btn btn-link">Read More &#10145;</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         @endforeach
