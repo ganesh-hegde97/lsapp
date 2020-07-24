@@ -10,6 +10,9 @@
 # Laravel Blog
 A Blog website using **Laravel** framework which includes Authentication, File uploading and Bootstrap 3.3.7 styling as well.
 
+### Usage Instructions
+Please install **node_modules** with command `npm install`, After installation use command `npm run dev` to get custom styles included or use `npm run watch` to monitor your custom styling changes.
+
 ## Database
 The sql dump is in **_SQL/lsapp.sql** , Please import it in database once you clone this project to work.
 

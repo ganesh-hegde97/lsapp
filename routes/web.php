@@ -12,7 +12,7 @@
 */
 
 //navigates to Home Page
-Route::get('/', 'PagesController@index');  
+Route::get('/', 'PagesController@index');
 
 //navigates to About Page
 Route::get('/about', 'PagesController@about');
